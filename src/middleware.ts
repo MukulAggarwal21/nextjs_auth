@@ -18,7 +18,6 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
-//   return NextResponse.redirect(new URL("/home", request.url));
 }
 
 // See "Matching Paths" below to learn more
