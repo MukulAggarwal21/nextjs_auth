@@ -32,7 +32,7 @@ console.log("User Exist ");
 
    const tokenData = {
    id: user._id , 
-   useername : user.username ,
+   username : user.username ,
    email : user.email
    }
 
