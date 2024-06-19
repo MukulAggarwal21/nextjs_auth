@@ -9,7 +9,7 @@ connect();
 export async function POST(request: NextRequest) {
 try {
    const reqBody = await request.json();
-    const { email, password } = reqBody;
+    const { email, password } = reqBody; 
 
     //Validation
     console.log(reqBody);
@@ -39,10 +39,10 @@ console.log("User Exist ");
 const token = await jwt.sign(tokenData , process.env.TOKEN_SECRET!  , {expiresIn : '1d'})
 
 
-   const response =  NextResponse.json({
+    const response =  NextResponse.json({
     message : "Logged in Success",
    success : true 
-   })
+  })
 
    response.cookies.set("token " , token , {
     httpOnly : true

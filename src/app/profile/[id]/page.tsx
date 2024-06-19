@@ -12,5 +12,4 @@ export default function page({ params}:any) {
     </div>
   );
 }
- 
-..
+

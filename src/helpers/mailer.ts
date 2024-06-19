@@ -1,6 +1,7 @@
 import User from "@/models/userModel";
 import nodemailer from "nodemailer";
 import bcryptjs from "bcryptjs";
+import { NextRequest } from "next/server";
 
 //any isliye likha hai ki ye teeno parameter apna type maang rhe the to ise chup karne ke liye hack lagake hamne 'any' use kar liya
 export const sendEmail = async ({ email, emailType, userId }: any) => {
@@ -54,3 +55,4 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
     throw new Error(error.message);
   }
 };
+

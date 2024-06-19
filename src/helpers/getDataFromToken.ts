@@ -11,3 +11,4 @@ export const getDataFromToken = (request: NextRequest) => {
     throw new Error(error.message);
   }
 };
+   
